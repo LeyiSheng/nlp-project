@@ -3,8 +3,9 @@ import json
 import os 
 import sys 
 import heapq
-import gurobipy as gp
-from gurobipy import GRB
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
 def generate_nl(x, y, obstacles, goals, initial_loc, constraint='None'):
 
@@ -217,6 +218,15 @@ def solution_direction(path):
     return directions
 
 def tsp_solver(grid, start, start_with='None'):
+    try:
+        import gurobipy as gp
+        from gurobipy import GRB
+    except ImportError as exc:
+        raise ImportError(
+            "gurobipy is required only for multi-goal sample generation. "
+            "Install gurobipy or run single-goal generation instead."
+        ) from exc
+
 
     '''
         Possible Constraints:
@@ -454,8 +464,14 @@ def main():
 
             samples.append(sample)
 
-        dir = '../single_goal/' if len(goals) == 1 else '../multi_goal/' 
-        with open(dir+str(sys.argv[1].split('/')[-1]).replace('.json', '') + '_samples.json', 'w') as fo:
+        output_dir = 'single_goal' if len(goals) == 1 else 'multi_goal'
+        output_path = os.path.join(
+            REPO_ROOT,
+            output_dir,
+            str(sys.argv[1].split('/')[-1]).replace('.json', '') + '_samples.json'
+        )
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, 'w') as fo:
                 json_object = json.dumps(samples, indent = 4)
                 fo.write(json_object)
                 fo.write('\n')

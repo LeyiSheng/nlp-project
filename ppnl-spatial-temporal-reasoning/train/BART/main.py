@@ -136,6 +136,19 @@ def main() -> None:
 		trainer.log_metrics("train", metrics)
 		trainer.save_metrics("train", metrics)
 		trainer.save_state()
+	if training_args.do_predict:
+		logger.info("{}Predict{}".format('~'*20, '~'*20))
+		for section, test_split in dataset_splits.test_splits.items():
+			predict_result = trainer.predict(
+				test_dataset=test_split.dataset,
+				test_examples=test_split.examples,
+				metric_key_prefix=f"predict_{section}",
+				max_length=data_training_args.val_max_target_length,
+				max_time=data_training_args.val_max_time,
+				num_beams=data_training_args.num_beams,
+			)
+			trainer.log_metrics(f"predict_{section}", predict_result.metrics)
+			trainer.save_metrics(f"predict_{section}", predict_result.metrics)
 
 if __name__ == '__main__':
 	main()

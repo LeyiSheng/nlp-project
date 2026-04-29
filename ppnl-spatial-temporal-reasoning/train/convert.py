@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 
 file_to_convert = sys.argv[1]
@@ -21,12 +22,14 @@ for item in data:
         'target': item[tg]
     })
 
-with open(f'T5/transformers_cache/{file_to_convert.split("/")[-1]}', 'w') as fo:
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(SCRIPT_DIR, 'T5', 'transformers_cache', file_to_convert.split("/")[-1]), 'w') as fo:
         json_object = json.dumps(spider, indent = 4)
         fo.write(json_object)
         fo.write('\n')
 
-with open(f'BART/transformers_cache/{file_to_convert.split("/")[-1]}', 'w') as fo:
+with open(os.path.join(SCRIPT_DIR, 'BART', 'transformers_cache', file_to_convert.split("/")[-1]), 'w') as fo:
         json_object = json.dumps(spider, indent = 4)
         fo.write(json_object)
         fo.write('\n')

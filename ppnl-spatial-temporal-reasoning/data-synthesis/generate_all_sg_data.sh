@@ -1,4 +1,7 @@
 #!/bin/bash
+set -euo pipefail
+
+cd "$(dirname "$0")"
 
 # Generating 6x6 environments
 python3 generate_envs.py 6 1 36
@@ -41,5 +44,4 @@ fi
 for item in "$TARGET_DIR"/*; do
     python3 generate_samples.py $item
 done
-
 

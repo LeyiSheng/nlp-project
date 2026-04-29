@@ -14,6 +14,20 @@ In order to get metrics for the model's outputs on the dataset run the following
 
 ``python executor-point-sg.py $path_to_model_outputs  $path_to_test_data ``
 
+For batch single-goal evaluation with the three core executor metrics, you can
+also run:
+
+``python evaluate_sg.py $path_to_model_outputs $path_to_test_data --details details.csv --json``
+
+This reports:
+
+- `success_rate`: the executed path reaches the goal.
+- `feasibility`: every action stays in bounds and avoids obstacles.
+- `optimality`: the executed path reaches the goal in the BFS shortest-path length.
+
+The model-output file may be JSON, JSONL, or plain text. JSON rows can use
+`generated`, `prediction`, `output`, `plan`, `agent_as_a_point`, or `target`.
+
 **Multi-Goal**:
 
 ``python executor-mg.py $path_to_model_outputs $path_to_test_data``

@@ -16,6 +16,7 @@
 
 
 import json
+import os
 from typing import List, Generator, Any, Dict, Tuple
 from third_party.spider.preprocess.get_tables import dump_db_json_schema
 import datasets
@@ -78,25 +79,37 @@ class Spider(datasets.GeneratorBasedBuilder):
 
     def _split_generators(self, dl_manager) -> List[datasets.SplitGenerator]:
         downloaded_filepath = dl_manager.download_and_extract(_URL)
+        train_file = os.getenv("PPNL_TRAIN_FILE", "./transformers_cache/multigoal_train_updated.json")
+        dev_file = os.getenv("PPNL_DEV_FILE", "./transformers_cache/multigoal_dev_updated.json")
+        test_file = os.getenv("PPNL_TEST_FILE")
 
-        return [
+        splits = [
             datasets.SplitGenerator(
                 name=datasets.Split.TRAIN,
                 gen_kwargs={
                     "data_filepaths": [
-                       "./transformers_cache/multigoal_train_updated.json ",
+                       train_file,
                     ]
                     if self.include_train_others
-                    else ["./transformers_cache/multigoal_train_updated.json",]
+                    else [train_file]
                 },
             ),
             datasets.SplitGenerator(
                 name=datasets.Split.VALIDATION,
                 gen_kwargs={
-                    "data_filepaths": ["./transformers_cache/multigoal_dev_updated.json",]
+                    "data_filepaths": [dev_file]
                 },
             ),
         ]
+        if test_file:
+            splits.append(
+                datasets.SplitGenerator(
+                    name="test",
+                    gen_kwargs={"data_filepaths": [test_file]},
+                )
+            )
+
+        return splits
 
     def _generate_examples(
         self, data_filepaths: List[str]
