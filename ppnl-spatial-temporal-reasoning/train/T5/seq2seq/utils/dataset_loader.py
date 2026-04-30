@@ -1,10 +1,9 @@
 import json
-from typing import Callable, Tuple
+from typing import Callable, Tuple, Any
 import logging
 import datasets.load
 from datasets.dataset_dict import DatasetDict
-from datasets.metric import Metric
-from datasets.arrow_dataset import Dataset, concatenate_datasets
+from datasets.arrow_dataset import Dataset
 from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
 from transformers.training_args import TrainingArguments
 from .args import ModelArguments
@@ -21,6 +20,15 @@ from .spider import spider_pre_process_function
 
 logger = logging.getLogger(__name__)
 
+
+class ExactMatchMetric:
+	def compute(self, predictions, references):
+		labels = [reference["label"] for reference in references]
+		if not labels:
+			return {"exact_match": 0.0}
+		count = sum(int(prediction == label) for prediction, label in zip(predictions, labels))
+		return {"exact_match": count / len(labels)}
+
 def _log_duplicate_count(dataset: Dataset, dataset_name: str, split: str)-> None:
 	d = dataset.to_dict()
 	d_t = [tuple((k, tuple(v)) for k, v in zip(d.keys(), vs)) for vs in zip(*d.values())]
@@ -31,12 +39,10 @@ def _log_duplicate_count(dataset: Dataset, dataset_name: str, split: str)-> None
 		logger.warning(f"The split ``{split}`` of the dataset ``{dataset_name}`` contains {duplicate_count} duplicates out of {num_examples} examples")
 
 
-def load_dataset(data_args: DataArguments, model_args:ModelArguments, data_training_args: DataTrainingArguments, training_args: TrainingArguments, tokenizer: PreTrainedTokenizerFast)->Tuple[Metric, DatasetSplits]:
+def load_dataset(data_args: DataArguments, model_args:ModelArguments, data_training_args: DataTrainingArguments, training_args: TrainingArguments, tokenizer: PreTrainedTokenizerFast)->Tuple[Any, DatasetSplits]:
 	print('DataArgs::::{}'.format(data_args))
 	_spider_dataset_dict: Callable[[], DatasetDict] = lambda: datasets.load.load_dataset(path = data_args.dataset_paths["spider"], cache_dir = model_args.cache_dir)
-	_spider_metric: Callable[[], Metric] = lambda: datasets.load.load_metric(
-		path = data_args.metric_paths["spider"], config_name = data_args.metric_config, test_suite_db_dir=data_args.test_suite_db_dir, experiment_id=f"My_experiment_{model_args.run_id}"
-		)
+	_spider_metric: Callable[[], ExactMatchMetric] = lambda: ExactMatchMetric()
 
 	# _spider_add_serialized_schema = lambda ex: spider_add_serialized_schema(ex=ex, data_training_args=data_training_args)
 	_spider_pre_process_function = lambda batch, max_source_length, max_target_length: spider_pre_process_function(batch, max_source_length, max_target_length, data_training_args, tokenizer)

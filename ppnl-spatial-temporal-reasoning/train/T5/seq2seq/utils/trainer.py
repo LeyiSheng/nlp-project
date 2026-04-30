@@ -1,9 +1,8 @@
 import collections
-from typing import Dict, List, Optional, NamedTuple
+from typing import Dict, List, Optional, NamedTuple, Any
 import transformers.trainer_seq2seq
 from transformers.trainer_utils import PredictionOutput, speed_metrics
 from datasets.arrow_dataset import Dataset
-from datasets.metric import Metric
 import numpy as np
 import time
 
@@ -17,7 +16,7 @@ class EvalPrediction(NamedTuple):
 class Seq2SeqTrainer(transformers.trainer_seq2seq.Seq2SeqTrainer):
     def __init__(
         self,
-        metric: Metric,
+        metric: Any,
         *args,
         eval_examples: Optional[Dataset] = None,
         ignore_pad_token_for_loss: bool = True,
