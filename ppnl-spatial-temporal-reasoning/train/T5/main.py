@@ -9,8 +9,7 @@ from transformers.training_args_seq2seq import Seq2SeqTrainingArguments
 from transformers.models.auto import AutoConfig, AutoTokenizer, AutoModelForSeq2SeqLM
 from transformers.data.data_collator import DataCollatorForSeq2Seq
 from transformers.trainer_utils import get_last_checkpoint, set_seed
-from transformers.models.t5.modeling_t5 import T5ForConditionalGeneration
-from transformers.models.t5.tokenization_t5_fast import T5TokenizerFast
+from transformers import T5ForConditionalGeneration, T5TokenizerFast
 from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
 from tokenizers import AddedToken
 from dataclasses import asdict, fields
