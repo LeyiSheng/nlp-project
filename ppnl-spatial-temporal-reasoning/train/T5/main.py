@@ -101,7 +101,6 @@ def main() -> None:
 	config = AutoConfig.from_pretrained(model_args.config_name if model_args.config_name else model_args.model_name_or_path,
 		cache_dir = model_args.cache_dir,
 		revision = model_args.model_revision,
-		use_auth_token = True if model_args.use_auth_token else None,
 		max_length = data_training_args.max_target_length,
 		num_beams = data_training_args.num_beams,
 		num_beam_groups = data_training_args.num_beam_groups,
@@ -110,7 +109,7 @@ def main() -> None:
 		use_cache = not training_args.gradient_checkpointing,
 		deepspeed = training_args.deepspeed,
 		)
-	tokenizer = AutoTokenizer.from_pretrained(model_args.tokenizer_name if model_args.tokenizer_name else model_args.model_name_or_path, cache_dir = model_args.cache_dir, use_fast=model_args.use_fast_tokenizer, revision = model_args.model_revision, use_auth_token=True if model_args.use_auth_token else None)
+	tokenizer = AutoTokenizer.from_pretrained(model_args.tokenizer_name if model_args.tokenizer_name else model_args.model_name_or_path, cache_dir = model_args.cache_dir, use_fast=model_args.use_fast_tokenizer, revision = model_args.model_revision)
 	# tokenizer.add_tokens(['/', 'struct', 'sep0', 'sep1', 'sep2', 'sep3', 'sep4', 'sep5', 'sep6', 'sep7'])
 	# tokenizer.add_tokens(['~', '^', '<', '\\', '`', '<='])
 	assert isinstance(tokenizer, PreTrainedTokenizerFast), "Only fast tokenizers are currently supported"
@@ -120,7 +119,7 @@ def main() -> None:
 	metric, dataset_splits = load_dataset(data_args, model_args, data_training_args=data_training_args, training_args=training_args, tokenizer=tokenizer)
 	model_cls_wrapper = lambda model_cls: model_cls
 	#print(model_args.model_name_or_path, bool(".ckpt" in model_args.model_name_or_path))#,model_name_or_path, model_args.model_revision, True if model_args.use_auth_token else None)
-	model = model_cls_wrapper(AutoModelForSeq2SeqLM).from_pretrained(model_args.model_name_or_path, from_tf=bool(".ckpt" in model_args.model_name_or_path), config = config, cache_dir = model_args.cache_dir, revision = model_args.model_revision, use_auth_token=True if model_args.use_auth_token else None)
+	model = model_cls_wrapper(AutoModelForSeq2SeqLM).from_pretrained(model_args.model_name_or_path, from_tf=bool(".ckpt" in model_args.model_name_or_path), config = config, cache_dir = model_args.cache_dir, revision = model_args.model_revision)
 
 	if isinstance(model, T5ForConditionalGeneration):
 		model.resize_token_embeddings(len(tokenizer))
