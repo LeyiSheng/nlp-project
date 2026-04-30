@@ -1,7 +1,7 @@
 import json
+import os
 from typing import Callable, Tuple, Any
 import logging
-import datasets.load
 from datasets.dataset_dict import DatasetDict
 from datasets.arrow_dataset import Dataset
 from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
@@ -29,6 +29,25 @@ class ExactMatchMetric:
 		count = sum(int(prediction == label) for prediction, label in zip(predictions, labels))
 		return {"exact_match": count / len(labels)}
 
+
+def _load_json_dataset(path: str) -> Dataset:
+	with open(path, encoding="utf-8") as f:
+		return Dataset.from_list(json.load(f))
+
+
+def _load_ppnl_dataset_dict() -> DatasetDict:
+	train_file = os.getenv("PPNL_TRAIN_FILE", "./transformers_cache/multigoal_train_updated.json")
+	dev_file = os.getenv("PPNL_DEV_FILE", "./transformers_cache/multigoal_dev_updated.json")
+	test_file = os.getenv("PPNL_TEST_FILE")
+
+	splits = {
+		"train": _load_json_dataset(train_file),
+		"validation": _load_json_dataset(dev_file),
+	}
+	if test_file:
+		splits["test"] = _load_json_dataset(test_file)
+	return DatasetDict(splits)
+
 def _log_duplicate_count(dataset: Dataset, dataset_name: str, split: str)-> None:
 	d = dataset.to_dict()
 	d_t = [tuple((k, tuple(v)) for k, v in zip(d.keys(), vs)) for vs in zip(*d.values())]
@@ -41,7 +60,7 @@ def _log_duplicate_count(dataset: Dataset, dataset_name: str, split: str)-> None
 
 def load_dataset(data_args: DataArguments, model_args:ModelArguments, data_training_args: DataTrainingArguments, training_args: TrainingArguments, tokenizer: PreTrainedTokenizerFast)->Tuple[Any, DatasetSplits]:
 	print('DataArgs::::{}'.format(data_args))
-	_spider_dataset_dict: Callable[[], DatasetDict] = lambda: datasets.load.load_dataset(path = data_args.dataset_paths["spider"], cache_dir = model_args.cache_dir)
+	_spider_dataset_dict: Callable[[], DatasetDict] = _load_ppnl_dataset_dict
 	_spider_metric: Callable[[], ExactMatchMetric] = lambda: ExactMatchMetric()
 
 	# _spider_add_serialized_schema = lambda ex: spider_add_serialized_schema(ex=ex, data_training_args=data_training_args)
