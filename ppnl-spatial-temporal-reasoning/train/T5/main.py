@@ -32,6 +32,15 @@ logger = logging.getLogger(__name__)
 
 #trainer.py, bridge, third_party, datasets_dir, logging
 
+def parse_json_args(parser: HfArgumentParser, json_file: str):
+	data = json.loads(Path(json_file).read_text())
+	training_fields = Seq2SeqTrainingArguments.__dataclass_fields__
+	if "eval_strategy" in training_fields and "evaluation_strategy" in data:
+		data["eval_strategy"] = data.pop("evaluation_strategy")
+	elif "evaluation_strategy" in training_fields and "eval_strategy" in data:
+		data["evaluation_strategy"] = data.pop("eval_strategy")
+	return parser.parse_dict(args=data)
+
 def main() -> None:
 	parser = HfArgumentParser((ModelArguments, DataArguments, DataTrainingArguments, Seq2SeqTrainingArguments))
 	model_args: ModelArguments
@@ -39,10 +48,15 @@ def main() -> None:
 	data_training_args: DataTrainingArguments
 	training_args: Seq2SeqTrainingArguments
 	if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
-		model_args, data_args, data_training_args, training_args = parser.parse_json_file(json_file = os.path.abspath(sys.argv[1]))
+		model_args, data_args, data_training_args, training_args = parse_json_args(parser, os.path.abspath(sys.argv[1]))
 	elif len(sys.argv) == 3 and sys.argv[1].startswith("--local_rank") and sys.argv[2].endswith(".json"):
 		data = json.loads(Path(os.path.abspath(sys.argv[2])).read_text())
 		data.update({"local_rank": int(sys.argv[1].split("=")[1])})
+		training_fields = Seq2SeqTrainingArguments.__dataclass_fields__
+		if "eval_strategy" in training_fields and "evaluation_strategy" in data:
+			data["eval_strategy"] = data.pop("evaluation_strategy")
+		elif "evaluation_strategy" in training_fields and "eval_strategy" in data:
+			data["evaluation_strategy"] = data.pop("eval_strategy")
 		model_args, data_args, data_training_args, training_args = parser.parse_dict(args = data)
 	else:
 		model_args, data_args, data_training_args, training_args = parser.parse_args_into_dataclasses()
