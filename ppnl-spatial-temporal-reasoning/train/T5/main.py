@@ -39,7 +39,7 @@ def parse_json_args(parser: HfArgumentParser, json_file: str):
 		data["eval_strategy"] = data.pop("evaluation_strategy")
 	elif "evaluation_strategy" in training_fields and "eval_strategy" in data:
 		data["evaluation_strategy"] = data.pop("eval_strategy")
-	return parser.parse_dict(args=data)
+	return parser.parse_dict(args=data, allow_extra_keys=True)
 
 def main() -> None:
 	parser = HfArgumentParser((ModelArguments, DataArguments, DataTrainingArguments, Seq2SeqTrainingArguments))
@@ -57,7 +57,7 @@ def main() -> None:
 			data["eval_strategy"] = data.pop("evaluation_strategy")
 		elif "evaluation_strategy" in training_fields and "eval_strategy" in data:
 			data["evaluation_strategy"] = data.pop("eval_strategy")
-		model_args, data_args, data_training_args, training_args = parser.parse_dict(args = data)
+		model_args, data_args, data_training_args, training_args = parser.parse_dict(args = data, allow_extra_keys=True)
 	else:
 		model_args, data_args, data_training_args, training_args = parser.parse_args_into_dataclasses()
 	if 'checkpoint-???' in model_args.model_name_or_path:
