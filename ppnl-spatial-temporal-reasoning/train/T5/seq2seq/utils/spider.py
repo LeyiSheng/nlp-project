@@ -148,8 +148,14 @@ def spider_pre_process_function(batch: dict, max_source_length: Optional[int], m
 	# pdb.set_trace()
 	model_inputs: dict = tokenizer(inputs, max_length=max_source_length, padding = False, truncation = True, return_overflowing_tokens = False)
 	targets = [spider_get_target(query) for query in batch["target"]]
-	with tokenizer.as_target_tokenizer():
-		labels = tokenizer(targets, max_length=max_target_length, padding=False, truncation=True, return_overflowing_tokens = False)
+	try:
+		labels = tokenizer(text_target=targets, max_length=max_target_length, padding=False, truncation=True, return_overflowing_tokens = False)
+	except TypeError:
+		if hasattr(tokenizer, "as_target_tokenizer"):
+			with tokenizer.as_target_tokenizer():
+				labels = tokenizer(targets, max_length=max_target_length, padding=False, truncation=True, return_overflowing_tokens = False)
+		else:
+			labels = tokenizer(targets, max_length=max_target_length, padding=False, truncation=True, return_overflowing_tokens = False)
 	model_inputs["labels"] = labels["input_ids"]
 	return model_inputs
 
@@ -191,7 +197,5 @@ class SpiderTrainer(Seq2SeqTrainer):
 	# 	parser = argparse.ArgumentParser()
 	# 	args = parser.parse_args()
 	# 	return args
-
-
 
 
