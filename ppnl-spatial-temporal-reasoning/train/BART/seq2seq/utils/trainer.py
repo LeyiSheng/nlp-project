@@ -1,4 +1,5 @@
 import collections
+import inspect
 from typing import Dict, List, Optional, NamedTuple, Any
 import transformers.trainer_seq2seq
 from transformers.trainer_utils import PredictionOutput, speed_metrics
@@ -23,7 +24,15 @@ class Seq2SeqTrainer(transformers.trainer_seq2seq.Seq2SeqTrainer):
         target_with_db_id: bool = False,
         **kwargs,
     ) -> None:
+        tokenizer = kwargs.pop("tokenizer", None)
+        trainer_params = inspect.signature(transformers.trainer_seq2seq.Seq2SeqTrainer.__init__).parameters
+        if tokenizer is not None:
+            if "processing_class" in trainer_params:
+                kwargs["processing_class"] = tokenizer
+            else:
+                kwargs["tokenizer"] = tokenizer
         super().__init__(*args, **kwargs)
+        self.ppnl_tokenizer = tokenizer if tokenizer is not None else getattr(self, "processing_class", None)
         self.metric = metric
         self.eval_examples = eval_examples
         self.compute_metrics = self._compute_metrics

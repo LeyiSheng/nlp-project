@@ -112,7 +112,8 @@ def main() -> None:
 	tokenizer = AutoTokenizer.from_pretrained(model_args.tokenizer_name if model_args.tokenizer_name else model_args.model_name_or_path, cache_dir = model_args.cache_dir, use_fast=model_args.use_fast_tokenizer, revision = model_args.model_revision)
 	# tokenizer.add_tokens(['/', 'struct', 'sep0', 'sep1', 'sep2', 'sep3', 'sep4', 'sep5', 'sep6', 'sep7'])
 	# tokenizer.add_tokens(['~', '^', '<', '\\', '`', '<='])
-	assert isinstance(tokenizer, PreTrainedTokenizerFast), "Only fast tokenizers are currently supported"
+	if not isinstance(tokenizer, PreTrainedTokenizerFast):
+		logger.warning("Fast tokenizer is unavailable; falling back to the regular tokenizer.")
 	# if isinstance(tokenizer, T5TokenizerFast):
 		# In T5 `<` is OOV, see https://github.com/google-research/language/blob/master/language/nqg/tasks/spider/restore_oov.py
 		# tokenizer.add_tokens([AddedToken(" <="), AddedToken(" <")])

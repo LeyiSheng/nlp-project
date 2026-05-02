@@ -162,11 +162,12 @@ def spider_pre_process_function(batch: dict, max_source_length: Optional[int], m
 class SpiderTrainer(Seq2SeqTrainer):
 	def _post_process_function(self, examples: Dataset, features: Dataset, predictions: np.ndarray, stage: str)->EvalPrediction:
 		# pdb.set_trace()
-		inputs = self.tokenizer.batch_decode([f["input_ids"] for f in features], skip_special_tokens = True)
+		tokenizer = self.ppnl_tokenizer
+		inputs = tokenizer.batch_decode([f["input_ids"] for f in features], skip_special_tokens = True)
 		label_ids = [f["labels"] for f in features]
 		if self.ignore_pad_token_for_loss:
-			_label_ids = np.where(label_ids!=-100, label_ids, self.tokenizer.pad_token_id)
-		decoded_label_ids = self.tokenizer.batch_decode(_label_ids, skip_special_tokens=True)
+			_label_ids = np.where(label_ids!=-100, label_ids, tokenizer.pad_token_id)
+		decoded_label_ids = tokenizer.batch_decode(_label_ids, skip_special_tokens=True)
 		metas = [
 		{
 			"target": x["target"],
@@ -176,7 +177,7 @@ class SpiderTrainer(Seq2SeqTrainer):
 		}
 		for x, context, label in zip(examples, inputs, decoded_label_ids)
 		]
-		predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+		predictions = tokenizer.batch_decode(predictions, skip_special_tokens=True)
 		assert len(metas) == len(predictions)
 		with open(f"{self.args.output_dir}/predictions_{stage}.json", "w") as f:
 			json.dump(
@@ -197,5 +198,4 @@ class SpiderTrainer(Seq2SeqTrainer):
 	# 	parser = argparse.ArgumentParser()
 	# 	args = parser.parse_args()
 	# 	return args
-
 
