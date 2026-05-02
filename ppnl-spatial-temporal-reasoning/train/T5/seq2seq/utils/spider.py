@@ -166,7 +166,12 @@ class SpiderTrainer(Seq2SeqTrainer):
 		inputs = tokenizer.batch_decode([f["input_ids"] for f in features], skip_special_tokens = True)
 		label_ids = [f["labels"] for f in features]
 		if self.ignore_pad_token_for_loss:
-			_label_ids = np.where(label_ids!=-100, label_ids, tokenizer.pad_token_id)
+			_label_ids = [
+				[token if token != -100 else tokenizer.pad_token_id for token in label]
+				for label in label_ids
+			]
+		else:
+			_label_ids = label_ids
 		decoded_label_ids = tokenizer.batch_decode(_label_ids, skip_special_tokens=True)
 		metas = [
 		{
@@ -177,6 +182,11 @@ class SpiderTrainer(Seq2SeqTrainer):
 		}
 		for x, context, label in zip(examples, inputs, decoded_label_ids)
 		]
+		if isinstance(predictions, tuple):
+			predictions = predictions[0]
+		if hasattr(predictions, "ndim") and predictions.ndim == 3:
+			predictions = np.argmax(predictions, axis=-1)
+		predictions = np.where(predictions != -100, predictions, tokenizer.pad_token_id)
 		predictions = tokenizer.batch_decode(predictions, skip_special_tokens=True)
 		assert len(metas) == len(predictions)
 		with open(f"{self.args.output_dir}/predictions_{stage}.json", "w") as f:
@@ -198,4 +208,3 @@ class SpiderTrainer(Seq2SeqTrainer):
 	# 	parser = argparse.ArgumentParser()
 	# 	args = parser.parse_args()
 	# 	return args
-
