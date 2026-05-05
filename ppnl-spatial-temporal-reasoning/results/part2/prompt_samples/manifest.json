@@ -1,0 +1,30 @@
+{
+  "seed": 2026,
+  "sample_size": 100,
+  "datasets": {
+    "seen_6x6": {
+      "source": "/root/nlp-project/ppnl-spatial-temporal-reasoning/single_goal/1_goals_test_seen_6x6_samples.json",
+      "output": "results/part2/prompt_samples/seen_6x6_sample.json",
+      "source_count": 2004,
+      "sample_count": 100
+    },
+    "unseen_5x5": {
+      "source": "/root/nlp-project/ppnl-spatial-temporal-reasoning/single_goal/1_goals_test_unseen_5x5_samples.json",
+      "output": "results/part2/prompt_samples/unseen_5x5_sample.json",
+      "source_count": 3750,
+      "sample_count": 100
+    },
+    "unseen_7x7": {
+      "source": "/root/nlp-project/ppnl-spatial-temporal-reasoning/single_goal/1_goals_test_unseen_7x7_samples.json",
+      "output": "results/part2/prompt_samples/unseen_7x7_sample.json",
+      "source_count": 3750,
+      "sample_count": 100
+    },
+    "more_obstacles": {
+      "source": "/root/nlp-project/ppnl-spatial-temporal-reasoning/single_goal/1_goals_test_unseen_6x6more_obstacles_samples.json",
+      "output": "results/part2/prompt_samples/more_obstacles_sample.json",
+      "source_count": 4500,
+      "sample_count": 100
+    }
+  }
+}
