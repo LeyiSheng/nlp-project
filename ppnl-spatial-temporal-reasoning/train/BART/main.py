@@ -110,6 +110,7 @@ def main() -> None:
 		use_cache = not training_args.gradient_checkpointing,
 		deepspeed = training_args.deepspeed,
 		)
+	config.early_stopping = False
 	tokenizer = AutoTokenizer.from_pretrained(model_args.tokenizer_name if model_args.tokenizer_name else model_args.model_name_or_path, cache_dir = model_args.cache_dir, use_fast=model_args.use_fast_tokenizer, revision = model_args.model_revision)
 	# tokenizer.add_tokens(['/', 'struct', 'sep0', 'sep1', 'sep2', 'sep3', 'sep4', 'sep5', 'sep6', 'sep7'])
 	# tokenizer.add_tokens(['~', '^', '<', '\\', '`', '<='])
