@@ -161,21 +161,29 @@ def extract_action_sequence(text: str) -> str:
     for marker in (
         "Therefore, my action sequence is:",
         "Therefore my action sequence is:",
+        "Therefore, the action sequence is:",
+        "Therefore the action sequence is:",
+        "Final answer:",
+        "Final actions:",
         "action sequence is:",
         "Actions:",
         "Act:",
     ):
-        if marker.lower() in text.lower():
-            match = re.search(re.escape(marker), text, flags=re.IGNORECASE)
-            if match:
-                candidates.append(text[match.end() :])
+        matches = list(re.finditer(re.escape(marker), text, flags=re.IGNORECASE))
+        if matches:
+            # Prefer the final explicit answer marker so CoT rationale words like
+            # "2 steps up" are not parsed as actions.
+            candidates.append(text[matches[-1].end() :])
 
     act_lines = re.findall(r"^Act\s+\d+\s*:\s*(.+)$", text, flags=re.IGNORECASE | re.MULTILINE)
     candidates.extend(act_lines)
-    candidates.append(text)
 
-    best = max((parse_actions(candidate) for candidate in candidates), key=len, default=[])
-    return " ".join(best)
+    for candidate in candidates:
+        actions = parse_actions(candidate)
+        if actions:
+            return " ".join(actions)
+
+    return " ".join(parse_actions(text))
 
 
 def execute_action_prefix(grid: list[list[int]], actions: Iterable[str]) -> tuple[list[str], str, tuple[int, int]]:

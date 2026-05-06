@@ -1,0 +1,101 @@
+idx,success,feasible,optimal,action_count,optimal_length,end,error,actions,prediction
+0,False,False,False,4,5,"[0, 5]",out_of_bounds,up left left left,up left left left 
+1,False,False,False,5,1,"[0, 5]",out_of_bounds,up right right down down,up right right down down 
+2,False,False,False,7,8,"[0, 3]",obstacle,left down down left down down down,left down down left down down down 
+3,False,False,False,6,3,"[5, 2]",out_of_bounds,left left down down down left,left left down down down left 
+4,False,False,False,8,4,"[0, 5]",out_of_bounds,up up up left up left left down,up up up left up left left down 
+5,False,False,False,7,3,"[0, 4]",out_of_bounds,up up up left left up left,up up up left left up left 
+6,False,False,False,4,2,"[0, 0]",out_of_bounds,up up up right,up up up right 
+7,True,True,True,4,4,"[5, 2]",,left down down down,left down down down 
+8,False,False,False,4,4,"[2, 1]",obstacle,up up left down,up up left down 
+9,False,False,False,6,11,"[0, 2]",obstacle,down down down left left down,down down down left left down 
+10,True,True,True,1,1,"[1, 4]",,up,up 
+11,False,False,False,6,3,"[5, 3]",out_of_bounds,down down down left down left,down down down left down left 
+12,False,False,False,4,3,"[3, 3]",obstacle,down right down down,down right down down 
+13,False,False,False,6,5,"[5, 3]",out_of_bounds,right right right down down down,right right right down down down 
+14,False,False,False,3,3,"[3, 5]",out_of_bounds,right down down,right down down 
+15,True,True,True,4,4,"[2, 4]",,up up up right,up up up right 
+16,False,False,False,0,1,"[1, 5]",invalid_action,,Goal not reachable
+17,False,False,False,6,5,"[5, 4]",obstacle,right right right down down down,right right right down down down 
+18,False,False,False,5,4,"[3, 5]",out_of_bounds,right right right down down,right right right down down 
+19,False,False,False,7,8,"[0, 5]",out_of_bounds,right right right right down down down,right right right right down down down 
+20,False,False,False,9,9,"[0, 5]",out_of_bounds,up up up up right right up right up,up up up up right right up right up 
+21,True,True,True,5,5,"[0, 2]",,up up up left up,up up up left up 
+22,False,False,False,5,5,"[2, 3]",obstacle,right right right right down,right right right right down 
+23,False,True,False,7,9,"[3, 5]",,right right right right down down down,right right right right down down down 
+24,False,False,False,9,9,"[2, 4]",obstacle,up left up up up left left left down,up left up up up left left left down 
+25,False,False,False,6,3,"[3, 0]",out_of_bounds,up left up left left left,up left up left left left 
+26,False,False,False,4,3,"[4, 5]",out_of_bounds,up right right right,up right right right 
+27,False,False,False,8,11,"[3, 0]",obstacle,up right right right down down right right,up right right right down down right right 
+28,False,False,False,7,9,"[2, 2]",obstacle,up up up right right right left,up up up right right right left 
+29,False,False,False,7,13,"[4, 2]",obstacle,right up up up left left down,right up up up left left down 
+30,True,True,True,3,3,"[1, 4]",,right right down,right right down 
+31,False,True,False,4,5,"[0, 2]",,up left left left,up left left left 
+32,False,True,False,5,4,"[3, 0]",,down left left down down,down left left down down 
+33,False,False,False,10,10,"[2, 1]",obstacle,down right down right down down right right right down,down right down right down down right right right down 
+34,False,False,False,10,9,"[3, 2]",obstacle,up up left left left up left up up left,up up left left left up left up up left 
+35,False,False,False,9,9,"[1, 3]",obstacle,down left left down left left left up down,down left left down left left left up down 
+36,False,False,False,7,8,"[5, 3]",obstacle,right up up right up up up,right up up right up up up 
+37,False,False,False,10,10,"[0, 3]",obstacle,up up up up left left up right left left,up up up up left left up right left left 
+38,True,True,False,3,1,"[3, 2]",,left down up,left down up 
+39,False,False,False,7,1,"[3, 5]",obstacle,right up up up right right down,right up up up right right down 
+40,False,False,False,6,5,"[3, 2]",obstacle,right up up right right right,right up up right right right 
+41,False,False,False,5,3,"[3, 2]",obstacle,right up up right right,right up up right right 
+42,False,False,False,9,10,"[2, 0]",obstacle,up up up up right right right up right,up up up up right right right up right 
+43,False,False,False,8,6,"[5, 4]",obstacle,left up up up down up left left,left up up up down up left left 
+44,False,False,False,7,2,"[5, 0]",out_of_bounds,left left down down down left down,left left down down down left down 
+45,False,False,False,7,7,"[2, 3]",obstacle,right down down right right down down,right down down right right down down 
+46,False,True,False,7,9,"[1, 1]",,up left up left left left down,up left up left left left down 
+47,False,False,False,0,11,"[5, 0]",invalid_action,,Goal not reachable
+48,False,False,False,7,12,"[5, 3]",obstacle,right up up up right up right,right up up up right up right 
+49,False,False,False,6,6,"[1, 2]",obstacle,right up right up right right,right up right up right right 
+50,False,False,False,8,9,"[4, 2]",obstacle,up right up up up right right right,up right up up up right right right 
+51,False,False,False,8,11,"[4, 0]",obstacle,down right right up up up right right,down right right up up up right right 
+52,False,False,False,9,6,"[5, 5]",obstacle,up up up up right right right up right,up up up up right right right up right 
+53,False,False,False,9,9,"[2, 5]",out_of_bounds,down right right right up right right down down,down right right right up right right down down 
+54,False,False,False,8,6,"[0, 0]",out_of_bounds,up right right right down down right right,up right right right down down right right 
+55,False,False,False,7,3,"[2, 0]",obstacle,up left up up up left left,up left up up up left left 
+56,False,False,False,5,3,"[3, 2]",obstacle,up right right up right,up right right up right 
+57,False,False,False,6,5,"[2, 5]",obstacle,up left up up right right,up left up up right right 
+58,False,False,False,5,5,"[2, 0]",obstacle,right down down right right,right down down right right 
+59,False,False,False,8,6,"[3, 2]",obstacle,right down down right right down down left,right down down right right down down left 
+60,False,False,False,7,9,"[1, 4]",obstacle,right down down down right down down,right down down down right down down 
+61,False,False,False,6,9,"[1, 5]",out_of_bounds,right down right down down right,right down right down down right 
+62,False,False,False,6,5,"[4, 5]",obstacle,up up left right right right,up up left right right right 
+63,False,False,False,3,2,"[0, 3]",obstacle,up up left,up up left 
+64,False,False,False,5,3,"[2, 1]",obstacle,down left left left down,down left left left down 
+65,False,False,False,6,9,"[4, 3]",obstacle,up up up up right right,up up up up right right 
+66,False,False,False,7,10,"[5, 2]",obstacle,right up up up left left left,right up up up left left left 
+67,False,False,False,7,8,"[3, 2]",obstacle,right right down down down left down,right right down down down left down 
+68,False,False,False,6,5,"[1, 4]",obstacle,up up up right right right,up up up right right right 
+69,False,False,False,6,9,"[1, 0]",out_of_bounds,up up up left left left,up up up left left left 
+70,False,False,False,0,15,"[2, 5]",invalid_action,,Goal not reachable
+71,False,False,False,7,10,"[4, 4]",obstacle,up up up up left left left,up up up up left left left 
+72,False,False,False,4,5,"[3, 2]",obstacle,right right down down,right right down down 
+73,False,False,False,4,9,"[4, 3]",obstacle,right up up up,right up up up 
+74,False,False,False,6,9,"[2, 5]",out_of_bounds,up up up right right down,up up up right right down 
+75,False,False,False,4,2,"[2, 0]",obstacle,up right right up,up right right up 
+76,False,False,False,7,7,"[5, 0]",obstacle,up right right up up up right,up right right up up up right 
+77,False,False,False,7,5,"[0, 5]",out_of_bounds,right right down down down left down,right right down down down left down 
+78,False,False,False,7,5,"[1, 4]",obstacle,up up up up right right up,up up up up right right up 
+79,False,True,False,6,7,"[0, 3]",,up up up up left left,up up up up left left 
+80,False,False,False,7,4,"[4, 4]",obstacle,up right right up up right down,up right right up up right down 
+81,False,False,False,7,13,"[4, 3]",obstacle,up up up left left up left,up up up left left up left 
+82,False,False,False,7,2,"[3, 5]",out_of_bounds,right right right down right down down,right right right down right down down 
+83,False,False,False,7,10,"[1, 5]",obstacle,left up up up left left down,left up up up left left down 
+84,False,False,False,7,5,"[3, 4]",obstacle,up up left up up left left,up up left up up left left 
+85,False,False,False,6,9,"[4, 5]",obstacle,up up left up left left,up up left up left left 
+86,False,False,False,4,8,"[2, 5]",obstacle,up up right right,up up right right 
+87,False,False,False,6,7,"[0, 5]",out_of_bounds,right right up up up right,right right up up up right 
+88,False,True,False,6,3,"[1, 3]",,up up up left up left,up up up left up left 
+89,False,False,False,8,1,"[2, 5]",out_of_bounds,up up up right up right right right,up up up right up right right right 
+90,False,False,False,6,9,"[2, 5]",obstacle,left up up left left left,left up up left left left 
+91,False,False,False,7,9,"[1, 5]",obstacle,up left left left down down left,up left left left down down left 
+92,False,False,False,6,9,"[2, 5]",obstacle,left up up left left left,left up up left left left 
+93,False,False,False,5,10,"[4, 5]",obstacle,up up left up right,up up left up right 
+94,False,False,False,7,8,"[0, 5]",out_of_bounds,right right down down down left down,right right down down down left down 
+95,False,False,False,5,1,"[1, 0]",out_of_bounds,left left up left left,left left up left left 
+96,False,False,False,7,5,"[1, 4]",obstacle,up right right right down down down,up right right right down down down 
+97,False,False,False,0,6,"[0, 4]",invalid_action,,Goal not reachable
+98,False,False,False,7,5,"[0, 1]",obstacle,left left down down down left down,left left down down down left down 
+99,False,False,False,8,3,"[0, 4]",obstacle,right right right down down down right down,right right right down down down right down 

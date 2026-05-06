@@ -1,0 +1,8 @@
+{
+  "total_input": 4500,
+  "total": 4141,
+  "skipped_unreachable": 359,
+  "success_rate": 0.8290268051195363,
+  "feasibility": 0.8302342429364887,
+  "optimality": 0.8280608548659744
+}

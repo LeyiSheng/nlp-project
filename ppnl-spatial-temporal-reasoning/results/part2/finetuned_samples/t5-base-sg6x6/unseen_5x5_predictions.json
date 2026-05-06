@@ -1,0 +1,4302 @@
+[
+  {
+    "idx": 9,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,1). Go from (3,0) to (0,4)",
+    "ground_truth": "up up up right right right right ",
+    "prediction": "up up up right right right right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 52,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,4). Go from (2,1) to (4,0)",
+    "ground_truth": "left down down ",
+    "prediction": "left down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 72,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,0). Go from (4,2) to (3,1)",
+    "ground_truth": "up left ",
+    "prediction": "up left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 97,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,3). Go from (4,2) to (4,4)",
+    "ground_truth": "right right ",
+    "prediction": "right right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "idx": 145,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,0). Go from (2,1) to (0,1)",
+    "ground_truth": "up up ",
+    "prediction": "up up",
+    "world": [
+      [
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 185,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,4). Go from (2,3) to (4,0)",
+    "ground_truth": "left left left down down ",
+    "prediction": "left left left down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 219,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,1). Go from (1,4) to (4,1)",
+    "ground_truth": "left left down left down down ",
+    "prediction": "left left down left down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 238,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,1). Go from (4,1) to (1,4)",
+    "ground_truth": "up up right up right right ",
+    "prediction": "up up right up right right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 306,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,0). Go from (4,1) to (2,1)",
+    "ground_truth": "up up ",
+    "prediction": "up up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 321,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,0). Go from (1,4) to (1,1)",
+    "ground_truth": "left left left ",
+    "prediction": "left left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 333,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,4). Go from (4,1) to (1,1)",
+    "ground_truth": "up up up ",
+    "prediction": "up up up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 334,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,4). Go from (1,0) to (3,2)",
+    "ground_truth": "right right down down ",
+    "prediction": "right right down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 342,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,4). Go from (3,2) to (2,0)",
+    "ground_truth": "up left left ",
+    "prediction": "up left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 440,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,2). Go from (0,3) to (1,4)",
+    "ground_truth": "right down ",
+    "prediction": "right down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 481,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,3). Go from (1,4) to (4,0)",
+    "ground_truth": "left left left left down down down ",
+    "prediction": "left left left left down down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 510,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,3). Go from (0,1) to (4,2)",
+    "ground_truth": "right down down down down ",
+    "prediction": "right down down down down",
+    "world": [
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 530,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,3). Go from (2,0) to (3,1)",
+    "ground_truth": "right down ",
+    "prediction": "right down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 664,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,1). Go from (3,3) to (1,0)",
+    "ground_truth": "up up left left left ",
+    "prediction": "up up left left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 754,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,2), (0,0), (0,2), (2,4) and (1,3). Go from (1,1) to (2,0)",
+    "ground_truth": "left down ",
+    "prediction": "left down",
+    "world": [
+      [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 783,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,4), (4,2), (4,3), (1,3) and (0,0). Go from (4,1) to (0,2)",
+    "ground_truth": "up up up up right ",
+    "prediction": "up up up up right",
+    "world": [
+      [
+        1,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 810,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (2,0), (3,1), (3,3) and (2,1). Go from (1,0) to (3,2)",
+    "ground_truth": "right right right down right down down left left up ",
+    "prediction": "right down down right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 819,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (2,0), (3,1), (3,3) and (2,1). Go from (4,1) to (0,2)",
+    "ground_truth": "right right right up up up up left left ",
+    "prediction": "right right up up up up left",
+    "world": [
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 820,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (2,0), (3,1), (3,3) and (2,1). Go from (1,0) to (3,0)",
+    "ground_truth": "right right right down right down down left left left left up ",
+    "prediction": "right down down left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 823,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (2,0), (3,1), (3,3) and (2,1). Go from (0,3) to (3,0)",
+    "ground_truth": "down down right down down left left left left up ",
+    "prediction": "down down down left left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 827,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (2,0), (3,1), (3,3) and (2,1). Go from (3,0) to (0,1)",
+    "ground_truth": "down right right right right up up up up left left left ",
+    "prediction": "right right up up up left",
+    "world": [
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 828,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (2,0), (3,1), (3,3) and (2,1). Go from (4,2) to (1,0)",
+    "ground_truth": "right right up up up left left left left ",
+    "prediction": "up left left up up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 830,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (2,0), (3,1), (3,3) and (2,1). Go from (4,0) to (1,2)",
+    "ground_truth": "right right right right up up up left left ",
+    "prediction": "right right right up up up left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 868,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,0), (4,1), (3,3), (0,0) and (1,1). Go from (0,1) to (3,0)",
+    "ground_truth": "right down down left down left ",
+    "prediction": "right down down down left left",
+    "world": [
+      [
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 890,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,4), (0,3), (4,4), (4,0) and (4,2). Go from (4,3) to (0,4)",
+    "ground_truth": "up up up right up ",
+    "prediction": "up up up right up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        2,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 926,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,3), (3,1), (1,2), (3,2) and (0,0). Go from (2,0) to (4,0)",
+    "ground_truth": "down down ",
+    "prediction": "down down",
+    "world": [
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 937,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (3,0), (1,1), (0,3) and (4,3). Go from (3,4) to (2,1)",
+    "ground_truth": "up left left left ",
+    "prediction": "up left left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 991,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (2,2), (3,3), (4,0) and (1,1). Go from (2,1) to (0,4)",
+    "ground_truth": "down right down right right up up up up ",
+    "prediction": "up up right right right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 995,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (2,2), (3,3), (4,0) and (1,1). Go from (3,0) to (4,3)",
+    "ground_truth": "right right down right ",
+    "prediction": "right right down right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1001,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (2,2), (3,3), (4,0) and (1,1). Go from (0,2) to (3,0)",
+    "ground_truth": "down right down right down down left left up left left ",
+    "prediction": "down down left left down",
+    "world": [
+      [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1009,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (2,2), (3,3), (4,0) and (1,1). Go from (4,1) to (0,1)",
+    "ground_truth": "right right right up up up up left left left ",
+    "prediction": "up up left up up right",
+    "world": [
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1013,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (2,2), (3,3), (4,0) and (1,1). Go from (2,1) to (0,3)",
+    "ground_truth": "down right down right right up up up up left ",
+    "prediction": "right up up right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1114,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (1,2), (1,1), (3,1) and (0,4). Go from (0,0) to (1,3)",
+    "ground_truth": "right right right down ",
+    "prediction": "right right right down",
+    "world": [
+      [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1149,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (2,1), (3,1), (1,3) and (2,2). Go from (1,1) to (4,2)",
+    "ground_truth": "right up right right down down left down left down ",
+    "prediction": "right right down down left down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1169,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (2,1), (3,1), (1,3) and (2,2). Go from (4,0) to (0,2)",
+    "ground_truth": "right right up right up right up up left left ",
+    "prediction": "up right right up up up",
+    "world": [
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1174,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,3), (2,3), (3,2), (2,2) and (4,4). Go from (0,1) to (2,4)",
+    "ground_truth": "right down right right down ",
+    "prediction": "right down right right down",
+    "world": [
+      [
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 1256,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,3), (3,3), (1,1), (0,1) and (3,4). Go from (0,4) to (4,0)",
+    "ground_truth": "left left down down left left down down ",
+    "prediction": "left left down down left left down down",
+    "world": [
+      [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1310,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,2), (3,0), (1,0), (4,4) and (1,3). Go from (3,3) to (0,4)",
+    "ground_truth": "up right up up ",
+    "prediction": "up right up up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 1393,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,3), (2,4), (2,3), (1,1) and (4,4). Go from (2,2) to (3,2)",
+    "ground_truth": "down ",
+    "prediction": "down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 1415,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,2), (2,2), (1,0), (1,3) and (2,0). Go from (4,1) to (4,4)",
+    "ground_truth": "up right right right down ",
+    "prediction": "up right right right down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "idx": 1429,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,2), (2,2), (1,0), (1,3) and (2,0). Go from (4,3) to (1,4)",
+    "ground_truth": "up up right up ",
+    "prediction": "up up right up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1436,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,2), (2,2), (1,0), (1,3) and (2,0). Go from (4,4) to (0,0)",
+    "ground_truth": "up up up up left left left left ",
+    "prediction": "up up up up left left left left",
+    "world": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        2
+      ]
+    ]
+  },
+  {
+    "idx": 1457,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,2), (2,1), (1,4), (4,1) and (0,4). Go from (2,4) to (1,1)",
+    "ground_truth": "left up left left ",
+    "prediction": "left up left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1549,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,3), (3,4), (2,4) and (4,4). Go from (0,4) to (0,2)",
+    "ground_truth": "down left left up ",
+    "prediction": "down left left up",
+    "world": [
+      [
+        0,
+        0,
+        3,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 1560,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,1), (0,3), (0,4) and (3,0). Go from (1,3) to (3,4)",
+    "ground_truth": "right down down ",
+    "prediction": "right down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1602,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,4), (0,0), (0,1) and (4,0). Go from (4,4) to (2,1)",
+    "ground_truth": "up left up left left ",
+    "prediction": "up left up left left",
+    "world": [
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  {
+    "idx": 1608,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,4), (0,0), (0,1) and (4,0). Go from (1,1) to (4,3)",
+    "ground_truth": "right right down down down ",
+    "prediction": "right right down down down",
+    "world": [
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1651,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,4), (0,2), (0,3) and (0,0). Go from (2,4) to (3,1)",
+    "ground_truth": "left left left down ",
+    "prediction": "left left left down",
+    "world": [
+      [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1667,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,4), (0,2), (0,3) and (0,0). Go from (3,1) to (2,2)",
+    "ground_truth": "up right ",
+    "prediction": "up right",
+    "world": [
+      [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1761,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,2), (0,1), (2,0) and (1,2). Go from (4,3) to (2,4)",
+    "ground_truth": "up up right ",
+    "prediction": "up up right",
+    "world": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1872,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,1), (1,3), (1,2) and (2,3). Go from (3,4) to (1,0)",
+    "ground_truth": "left left up left up left ",
+    "prediction": "left left left up left up",
+    "world": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1924,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,0), (3,0), (0,4) and (4,1). Go from (1,0) to (2,2)",
+    "ground_truth": "right right down ",
+    "prediction": "right right down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1947,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,0), (3,0), (0,4) and (4,1). Go from (4,2) to (0,1)",
+    "ground_truth": "up up up up left ",
+    "prediction": "up up up up left",
+    "world": [
+      [
+        0,
+        3,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 1955,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,3), (2,0), (4,1) and (0,4). Go from (0,2) to (4,3)",
+    "ground_truth": "down right down down down ",
+    "prediction": "down right down down down",
+    "world": [
+      [
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2059,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (4,0), (2,2) and (1,2). Go from (3,1) to (2,3)",
+    "ground_truth": "right right up ",
+    "prediction": "right right up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        3,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2074,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,3), (3,4), (1,0) and (1,2). Go from (4,4) to (0,4)",
+    "ground_truth": "left up left up left up up right right right ",
+    "prediction": "left up up up up right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  {
+    "idx": 2101,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,1), (1,3), (1,2) and (2,0). Go from (0,0) to (4,0)",
+    "ground_truth": "right right right right down down left left down left left down ",
+    "prediction": "down right down down left down",
+    "world": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2108,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,1), (1,3), (1,2) and (2,0). Go from (1,0) to (4,2)",
+    "ground_truth": "right up right right right down down left left down down ",
+    "prediction": "right down right down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2113,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,1), (1,3), (1,2) and (2,0). Go from (4,1) to (0,0)",
+    "ground_truth": "up right up right right up up left left left left ",
+    "prediction": "up left left up up up right",
+    "world": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2116,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,1), (1,3), (1,2) and (2,0). Go from (4,2) to (0,1)",
+    "ground_truth": "up up right right up up left left left ",
+    "prediction": "up up left left up up right",
+    "world": [
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2125,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,1), (1,3), (1,2) and (2,0). Go from (1,0) to (3,3)",
+    "ground_truth": "right up right right right down down left down ",
+    "prediction": "right down right right down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2128,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,1), (1,3), (1,2) and (2,0). Go from (4,2) to (0,1)",
+    "ground_truth": "up up right right up up left left left ",
+    "prediction": "up up left left up up right",
+    "world": [
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2229,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,3), (0,4), (2,2) and (1,0). Go from (1,4) to (3,0)",
+    "ground_truth": "left left left down left down ",
+    "prediction": "left down down left left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2372,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,3), (4,0) and (3,4). Go from (2,4) to (0,4)",
+    "ground_truth": "up up ",
+    "prediction": "up up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2385,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,3), (4,0) and (3,4). Go from (2,3) to (0,1)",
+    "ground_truth": "up up left left ",
+    "prediction": "up up left left",
+    "world": [
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2448,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,0), (3,0) and (1,1). Go from (0,0) to (4,3)",
+    "ground_truth": "right right right down down down down ",
+    "prediction": "right right right down down down down",
+    "world": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2498,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,1), (0,0) and (1,2). Go from (2,0) to (4,4)",
+    "ground_truth": "right right right right down down ",
+    "prediction": "right right right right down down",
+    "world": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "idx": 2503,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,1), (0,0) and (1,2). Go from (0,2) to (4,4)",
+    "ground_truth": "right right down down down down ",
+    "prediction": "right right down down down down",
+    "world": [
+      [
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "idx": 2642,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,3), (1,0) and (3,1). Go from (2,4) to (0,0)",
+    "ground_truth": "up up left left left left ",
+    "prediction": "up up left left left left",
+    "world": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2828,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (4,4), (0,0) and (0,3). Go from (3,1) to (0,4)",
+    "ground_truth": "up up right right right up ",
+    "prediction": "up up right right right up",
+    "world": [
+      [
+        1,
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 2855,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (3,0) and (2,1). Go from (3,1) to (3,4)",
+    "ground_truth": "right right right ",
+    "prediction": "right right right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2857,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0), (3,0) and (2,1). Go from (0,0) to (2,2)",
+    "ground_truth": "right right down down ",
+    "prediction": "right right down down",
+    "world": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2880,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,3), (4,0) and (1,1). Go from (0,3) to (4,3)",
+    "ground_truth": "left down down right down down ",
+    "prediction": "left down down right down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 2931,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,0), (3,3) and (0,4). Go from (1,0) to (4,4)",
+    "ground_truth": "right right right right down down down ",
+    "prediction": "right right right right down down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "idx": 3030,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,1) and (1,4). Go from (0,3) to (1,3)",
+    "ground_truth": "down ",
+    "prediction": "down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3048,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,1) and (1,4). Go from (1,0) to (2,0)",
+    "ground_truth": "down ",
+    "prediction": "down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3065,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,3) and (1,4). Go from (3,3) to (2,1)",
+    "ground_truth": "left up left ",
+    "prediction": "left up left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3114,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,2) and (3,3). Go from (4,4) to (2,1)",
+    "ground_truth": "up up left left left ",
+    "prediction": "up up left left left",
+    "world": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  {
+    "idx": 3120,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,3) and (0,3). Go from (2,2) to (1,0)",
+    "ground_truth": "up left left ",
+    "prediction": "up left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3149,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,3) and (0,3). Go from (3,0) to (4,4)",
+    "ground_truth": "right right right right down ",
+    "prediction": "right right right right down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "idx": 3189,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,0) and (4,1). Go from (1,3) to (2,0)",
+    "ground_truth": "left left left down ",
+    "prediction": "left left left down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3219,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,1) and (0,1). Go from (2,1) to (0,3)",
+    "ground_truth": "right up up right ",
+    "prediction": "right up up right",
+    "world": [
+      [
+        0,
+        1,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3266,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,2) and (4,2). Go from (4,1) to (0,3)",
+    "ground_truth": "up up up up right right ",
+    "prediction": "up up up up right right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3281,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,2) and (0,2). Go from (0,0) to (4,2)",
+    "ground_truth": "right down down down down right ",
+    "prediction": "right down down down down right",
+    "world": [
+      [
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3299,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,2) and (0,2). Go from (1,3) to (3,0)",
+    "ground_truth": "left left left down down ",
+    "prediction": "left left left down down",
+    "world": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3387,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,3) and (4,4). Go from (1,2) to (1,0)",
+    "ground_truth": "left left ",
+    "prediction": "left left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 3389,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (0,3) and (4,4). Go from (3,1) to (1,4)",
+    "ground_truth": "up up right right right ",
+    "prediction": "up up right right right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 3395,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,3) and (1,1). Go from (0,4) to (2,0)",
+    "ground_truth": "left left left left down down ",
+    "prediction": "left left left left down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3413,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,3) and (1,1). Go from (3,2) to (4,2)",
+    "ground_truth": "down ",
+    "prediction": "down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3430,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,0) and (2,3). Go from (0,0) to (4,2)",
+    "ground_truth": "right right down down down down ",
+    "prediction": "right right down down down down",
+    "world": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3459,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,4) and (4,4). Go from (3,3) to (0,1)",
+    "ground_truth": "up up up left left ",
+    "prediction": "up up up left left",
+    "world": [
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 3491,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (2,0) and (1,0). Go from (1,2) to (4,0)",
+    "ground_truth": "left down down left down ",
+    "prediction": "left down down left down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3513,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,2) and (4,1). Go from (1,0) to (4,4)",
+    "ground_truth": "right right right right down down down ",
+    "prediction": "right right right right down down down",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "idx": 3525,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,2) and (4,1). Go from (4,2) to (1,4)",
+    "ground_truth": "right up up up right ",
+    "prediction": "right up up up right",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "idx": 3564,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (1,3) and (4,4). Go from (3,0) to (1,4)",
+    "ground_truth": "up right right right right up ",
+    "prediction": "up right right right right up",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "idx": 3685,
+    "english": "You are in a 5 by 5 world. There are obstacles that you have to avoid at: (3,0) and (3,3). Go from (3,2) to (4,0)",
+    "ground_truth": "left down left ",
+    "prediction": "left down left",
+    "world": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+]

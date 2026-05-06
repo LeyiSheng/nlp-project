@@ -1,0 +1,101 @@
+idx,success,feasible,optimal,action_count,optimal_length,end,error,actions,prediction
+0,False,True,False,8,7,"[1, 4]",,up up up right right right down right,up up up right right right down right 
+1,True,True,True,3,3,"[4, 0]",,left down down,left down down 
+2,True,True,True,2,2,"[3, 1]",,up left,up left 
+3,True,True,True,2,2,"[4, 4]",,right right,right right 
+4,True,True,True,2,2,"[0, 1]",,up up,up up 
+5,True,True,True,5,5,"[4, 0]",,left left left down down,left left left down down 
+6,True,True,True,6,6,"[4, 1]",,left left down left down down,left left down left down down 
+7,True,True,True,6,6,"[1, 4]",,up up right up right right,up up right up right right 
+8,True,True,True,2,2,"[2, 1]",,up up,up up 
+9,True,True,True,3,3,"[1, 1]",,left left left,left left left 
+10,True,True,True,3,3,"[1, 1]",,up up up,up up up 
+11,True,True,True,4,4,"[3, 2]",,right right down down,right right down down 
+12,True,True,True,3,3,"[2, 0]",,up left left,up left left 
+13,True,True,True,2,2,"[1, 4]",,right down,right down 
+14,True,True,True,7,7,"[4, 0]",,left left left left down down down,left left left left down down down 
+15,False,True,False,4,5,"[3, 2]",,right down down down,right down down down 
+16,True,True,True,2,2,"[3, 1]",,right down,right down 
+17,True,True,True,5,5,"[1, 0]",,up up left left left,up up left left left 
+18,True,True,True,2,2,"[2, 0]",,left down,left down 
+19,True,True,True,5,5,"[0, 2]",,up up up up right,up up up up right 
+20,False,False,False,4,10,"[1, 2]",obstacle,right right down down,right right down down 
+21,False,False,False,6,9,"[4, 3]",obstacle,right right up up up left,right right up up up left 
+22,False,False,False,4,12,"[1, 1]",obstacle,right down down left,right down down left 
+23,False,False,False,6,10,"[1, 2]",obstacle,left down down down left left,left down down down left left 
+24,False,False,False,6,12,"[3, 0]",obstacle,right right up up up left,right right up up up left 
+25,False,True,False,7,9,"[1, 2]",,right right up up up left left,right right up up up left left 
+26,False,False,False,5,9,"[3, 2]",obstacle,right right up up up,right right up up up 
+27,False,False,False,6,6,"[0, 1]",obstacle,down right down down left left,down right down down left left 
+28,True,True,True,5,5,"[0, 4]",,up up up right up,up up up right up 
+29,True,True,True,2,2,"[4, 0]",,down down,down down 
+30,True,True,True,4,4,"[2, 1]",,up left left left,up left left left 
+31,False,False,False,8,9,"[4, 2]",out_of_bounds,down down right down right right up up,down down right down right right up up 
+32,True,True,True,4,4,"[4, 3]",,right right down right,right right down right 
+33,False,False,False,5,11,"[1, 2]",obstacle,down down down left left,down down down left left 
+34,False,False,False,8,10,"[2, 1]",obstacle,up up right right up up left left,up up right right up up left left 
+35,False,True,False,8,10,"[2, 3]",,down down right right right up up left,down down right right right up up left 
+36,True,True,True,4,4,"[1, 3]",,right right right down,right right right down 
+37,False,False,False,6,10,"[1, 2]",obstacle,right right down down left down,right right down down left down 
+38,False,False,False,7,10,"[2, 3]",obstacle,right right right up up up left,right right right up up up left 
+39,True,True,True,5,5,"[2, 4]",,right down right right down,right down right right down 
+40,False,True,False,7,8,"[3, 0]",,left left down down left left down,left left down down left left down 
+41,True,True,True,4,4,"[0, 4]",,up right up up,up right up up 
+42,True,True,True,1,1,"[3, 2]",,down,down 
+43,True,True,True,5,5,"[4, 4]",,up right right right down,up right right right down 
+44,True,True,True,4,4,"[1, 4]",,up up right up,up up right up 
+45,False,False,False,9,8,"[0, 1]",out_of_bounds,up up up up left left left up left,up up up up left left left up left 
+46,True,True,True,4,4,"[1, 1]",,left up left left,left up left left 
+47,True,True,True,4,4,"[0, 2]",,down left left up,down left left up 
+48,True,True,True,3,3,"[3, 4]",,right down down,right down down 
+49,True,True,True,5,5,"[2, 1]",,up left up left left,up left up left left 
+50,True,True,True,5,5,"[4, 3]",,right right down down down,right right down down down 
+51,True,True,True,4,4,"[3, 1]",,left left left down,left left left down 
+52,True,True,True,2,2,"[2, 2]",,up right,up right 
+53,True,True,True,3,3,"[2, 4]",,up up right,up up right 
+54,False,False,False,6,6,"[1, 1]",obstacle,left left up left up right,left left up left up right 
+55,True,True,True,3,3,"[2, 2]",,right right down,right right down 
+56,True,True,True,5,5,"[0, 1]",,up up up up left,up up up up left 
+57,True,True,True,5,5,"[4, 3]",,down right down down down,down right down down down 
+58,True,True,True,3,3,"[2, 3]",,right right up,right right up 
+59,False,False,False,10,10,"[1, 1]",obstacle,left left left up up up right up right right,left left left up up up right up right right 
+60,False,False,False,6,12,"[1, 1]",obstacle,down right down down left down,down right down down left down 
+61,False,False,False,6,11,"[0, 2]",obstacle,up right right down down down,up right right down down down 
+62,False,False,False,5,11,"[3, 0]",obstacle,up left up up up,up left up up up 
+63,False,False,False,7,9,"[2, 2]",obstacle,up up left left up up right,up up left left up up right 
+64,False,False,False,7,9,"[0, 3]",obstacle,up right right right down down down,up right right right down down down 
+65,False,False,False,7,9,"[2, 2]",obstacle,up up left left up up right,up up left left up up right 
+66,False,False,False,6,6,"[1, 2]",obstacle,left left down left left down,left left down left left down 
+67,True,True,True,2,2,"[0, 4]",,up up,up up 
+68,True,True,True,4,4,"[0, 1]",,up up left left,up up left left 
+69,False,True,False,6,7,"[3, 3]",,right right right down down down,right right right down down down 
+70,True,True,True,6,6,"[4, 4]",,right right right right down down,right right right right down down 
+71,False,True,False,5,6,"[3, 4]",,right right down down down,right right down down down 
+72,False,True,False,6,6,"[0, 2]",,up up left left left right,up up left left left right 
+73,True,True,True,6,6,"[0, 4]",,up up right right right up,up up right right right up 
+74,True,True,True,3,3,"[3, 4]",,right right right,right right right 
+75,True,True,True,4,4,"[2, 2]",,right right down down,right right down down 
+76,True,True,True,6,6,"[4, 3]",,left down down right down down,left down down right down down 
+77,True,True,True,7,7,"[4, 4]",,right right right right down down down,right right right right down down down 
+78,True,True,True,1,1,"[1, 3]",,down,down 
+79,True,True,True,1,1,"[2, 0]",,down,down 
+80,True,True,True,3,3,"[2, 1]",,left up left,left up left 
+81,True,True,True,5,5,"[2, 1]",,up up left left left,up up left left left 
+82,True,True,True,3,3,"[1, 0]",,up left left,up left left 
+83,True,True,True,5,5,"[4, 4]",,right right right right down,right right right right down 
+84,True,True,True,4,4,"[2, 0]",,left left left down,left left left down 
+85,True,True,True,4,4,"[0, 3]",,right up up right,right up up right 
+86,True,True,True,6,6,"[0, 3]",,up up up up right right,up up up up right right 
+87,True,True,True,6,6,"[4, 2]",,right down down down down right,right down down downdown right 
+88,True,True,True,5,5,"[3, 0]",,left left left down down,left left left down down 
+89,True,True,True,2,2,"[1, 0]",,left left,left left 
+90,True,True,True,5,5,"[1, 4]",,up up right right right,up up right right right 
+91,True,True,True,6,6,"[2, 0]",,left left left left down down,left left left left down down 
+92,True,True,True,1,1,"[4, 2]",,down,down 
+93,False,True,False,5,6,"[3, 2]",,right right down down down,right right down down down 
+94,True,True,True,5,5,"[0, 1]",,up up up left left,up up up left left 
+95,True,True,True,5,5,"[4, 0]",,left down down left down,left down down left down 
+96,True,True,True,7,7,"[4, 4]",,right right right right down down down,right right right right down down down 
+97,True,True,True,5,5,"[1, 4]",,right up up up right,right up up up right 
+98,False,False,False,6,6,"[2, 3]",obstacle,up right right right up right,up right right right up right 
+99,True,True,True,3,3,"[4, 0]",,left down left,left down left 
