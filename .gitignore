@@ -1,0 +1,53 @@
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Large generated artifacts
+outputs/
+results/
+checkpoints/
+runs/
+wandb/
+
+# Model/data cache artifacts
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.pkl
+
+# Archive/data dumps
+*.zip
+*.tar
+*.tar.gz
+*.tgz
