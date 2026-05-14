@@ -16,7 +16,26 @@ DEFAULT_MODEL_ID = "SheldonLI329/ppnl-baselines"
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model-id", default=DEFAULT_MODEL_ID)
-    parser.add_argument("--model-subfolder", required=True, choices=MODEL_SUBFOLDERS)
+    parser.add_argument(
+        "--model-path",
+        default=None,
+        help="Optional local checkpoint directory. When set, --model-id and --model-subfolder are ignored for loading.",
+    )
+    parser.add_argument(
+        "--hf-model-id",
+        default=None,
+        help=(
+            "HuggingFace pretrained checkpoint id without fine-tuning "
+            "(e.g. tiny, t5-small, facebook/bart-base). "
+            "When set, --model-id and --model-subfolder are ignored for weight loading."
+        ),
+    )
+    parser.add_argument(
+        "--model-subfolder",
+        default=None,
+        choices=MODEL_SUBFOLDERS,
+        help="Fine-tuned subfolder on HuggingFace Hub (required unless --model-path or --hf-model-id).",
+    )
     parser.add_argument("--test-data", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--device", default="auto", help="'auto', 'cpu', 'cuda', or cuda device like cuda:0")
@@ -57,14 +76,29 @@ def main() -> int:
     questions = [sample["nl_description"] for sample in samples]
     device = resolve_device(args.device)
 
-    config = AutoConfig.from_pretrained(args.model_id, subfolder=args.model_subfolder)
+    if args.model_path:
+        load_source = args.model_path
+        load_kwargs = {}
+    elif args.hf_model_id:
+        load_source = args.hf_model_id
+        load_kwargs = {}
+    else:
+        if not args.model_subfolder:
+            raise SystemExit(
+                "Provide --model-subfolder for Hub fine-tuned weights, "
+                "or --model-path / --hf-model-id for local / pretrained loading."
+            )
+        load_source = args.model_id
+        load_kwargs = {"subfolder": args.model_subfolder}
+
+    config = AutoConfig.from_pretrained(load_source, **load_kwargs)
     if hasattr(config, "early_stopping"):
         config.early_stopping = False
 
-    tokenizer = AutoTokenizer.from_pretrained(args.model_id, subfolder=args.model_subfolder, use_fast=True)
+    tokenizer = AutoTokenizer.from_pretrained(load_source, use_fast=True, **load_kwargs)
     model = AutoModelForSeq2SeqLM.from_pretrained(
-        args.model_id,
-        subfolder=args.model_subfolder,
+        load_source,
+        **load_kwargs,
         config=config,
     )
     if hasattr(model.generation_config, "early_stopping"):
